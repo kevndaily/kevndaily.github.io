@@ -1,0 +1,2157 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+	<text align="center">
+	<style>
+	body {
+  		background-color: #99ffcc;
+	}
+	/* This is for the text at the very top of the page */
+	h3 {
+  		font-size: 40px;
+		background-color: #4CAF50;
+		color: white;
+		border: 2px solid #000000;
+	}
+	/* Titles of the tables and the predictions */
+	h2 {
+		font-size: 30px;
+	}
+	/* All other text other than the table */
+	p {
+		background-color: #ffffff;
+	}
+	.center {
+  		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+  		width: 50%;
+	}
+	/* The next 26 lines of code are all for the tables. Colour, size, borders etc. */
+	#meninfo, #womeninfo, #mentour, #womentour {
+  		font-family: Arial;
+  		border-collapse: collapse;
+  		width: 100%;
+	}
+
+	#meninfo td, #meninfo th, #womeninfo td, #womeninfo th, #mentour td, #mentour th, #womentour td, #womentour th{
+  		border: 1px solid #000000;
+  		padding: 5px;
+	}
+
+	#meninfo tr:nth-child(even){background-color: #f2f2f2;}
+	#meninfo tr:hover {background-color: #ddd;}
+	#womeninfo tr:nth-child(even){background-color: #f2f2f2;}
+	#womeninfo tr:hover {background-color: #ddd;}
+	#mentour tr:nth-child(even){background-color: #f2f2f2;}
+	#mentour tr:hover {background-color: #ddd;}
+	#womentour tr:nth-child(even){background-color: #f2f2f2;}
+	#womentour tr:hover {background-color: #ddd;}
+
+	#meninfo th, #womeninfo th, #mentour th, #womentour th {
+  		padding-top: 5px;
+  		padding-bottom: 5px;
+  		background-color: #4CAF50;
+  		color: white;
+	}
+	/* The boxes everywhere we use the text 'p' */
+	.b0rder {
+		border-style:solid;
+ 		border-color:#000000;
+		font-size: 18px;
+	}
+	/* Border around the images */
+	img {
+  		border: 5px solid #000000;
+	}
+	</style>
+	<h3>Badminton at the Olympics: Who will win?</h3>
+	<!-- Getting image of me playing badminton -->
+	<img src="https://scontent.fdub4-1.fna.fbcdn.net/v/t1.0-9/10561815_1611664185726596_6755693519610260100_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=174925&_nc_ohc=FOV8KMWWpuwAX-m7IRi&_nc_ht=scontent.fdub4-1.fna&oh=495ba3bf9d8cd63174feef60a76dbcf1&oe=6087F138" alt="Me playing badminton" width="350" height="300" class="center" >
+	<p class="b0rder">My name is Kevin and I am a badminton player from Ireland. With the Olympics coming up this year I thought I would make a site to share the details of the best 50 players in mens and women singles and show their form since the last Olympics. In the end I will predict who I think will win the gold medal in both events. I have more plans for this site but I wanted to get this much up for now.</p>
+	<br>
+	<p class="b0rder">You will notice that there are one or two players missing from each table acccording to the rankings.Some players have retired but are still on rankings so I have accounted for this.</p>
+	<br>
+	<!-- Creating the table for Men's Singles player info -->
+	<h2> Men's Singles Player Information </h2>
+	<table id="meninfo">
+		<t>
+			<th> Name </th>
+			<th> Age </th>
+			<th> Country </th>
+			<th> Ranking </th>
+			<th> Height (metres) </th>
+		</t>
+	<!-- Getting our data -->
+				<tr>
+				<td>Ygor Coelho</td>
+				<td>24</td>
+				<td>Brazil</td>
+				<td>52</td>
+				<td>1.78</td>
+			</tr>
+				<tr>
+				<td>Brian Yang</td>
+				<td>19</td>
+				<td>Canada</td>
+				<td>50</td>
+				<td>1.8</td>
+			</tr>
+				<tr>
+				<td>Jason Anthony Ho-Shue</td>
+				<td>22</td>
+				<td>Canada</td>
+				<td>42</td>
+				<td>1.82</td>
+			</tr>
+				<tr>
+				<td>Shi Yu Qi</td>
+				<td>24</td>
+				<td>China</td>
+				<td>11</td>
+				<td>1.84</td>
+			</tr>
+				<tr>
+				<td>Huang Yu Xiang</td>
+				<td>28</td>
+				<td>China</td>
+				<td>25</td>
+				<td>1.8</td>
+			</tr>
+				<tr>
+				<td>Zhao Jun Peng</td>
+				<td>25</td>
+				<td>China</td>
+				<td>38</td>
+				<td>1.85</td>
+			</tr>
+				<tr>
+				<td>Sun Fei Xiang</td>
+				<td>22</td>
+				<td>China</td>
+				<td>44</td>
+				<td>1.76</td>
+			</tr>
+				<tr>
+				<td>Chen Long</td>
+				<td>32</td>
+				<td>China</td>
+				<td>6</td>
+				<td>1.87</td>
+			</tr>
+				<tr>
+				<td>Lu Guang Zu</td>
+				<td>24</td>
+				<td>China</td>
+				<td>23</td>
+				<td>1.78</td>
+			</tr>
+				<tr>
+				<td>Chou Tien Chen</td>
+				<td>31</td>
+				<td>Chinese Taipei</td>
+				<td>4</td>
+				<td>1.8</td>
+			</tr>
+				<tr>
+				<td>Wang Tzu Wei</td>
+				<td>25</td>
+				<td>Chinese Taipei</td>
+				<td>9</td>
+				<td>1.78</td>
+			</tr>
+				<tr>
+				<td>Viktor Axelsen</td>
+				<td>27</td>
+				<td>Denmark</td>
+				<td>2</td>
+				<td>1.94</td>
+			</tr>
+				<tr>
+				<td>Rasmus Gemke</td>
+				<td>24</td>
+				<td>Denmark</td>
+				<td>12</td>
+				<td>1.85</td>
+			</tr>
+				<tr>
+				<td>Hans-Kristian Solberg Vittinghus</td>
+				<td>35</td>
+				<td>Denmark</td>
+				<td>24</td>
+				<td>1.8</td>
+			</tr>
+				<tr>
+				<td>Anders Antonsen</td>
+				<td>23</td>
+				<td>Denmark</td>
+				<td>3</td>
+				<td>1.83</td>
+			</tr>
+				<tr>
+				<td>Toma Junior Popov</td>
+				<td>22</td>
+				<td>France</td>
+				<td>49</td>
+				<td>1.96</td>
+			</tr>
+				<tr>
+				<td>Thomas Rouxel</td>
+				<td>29</td>
+				<td>France</td>
+				<td>47</td>
+				<td>1.72</td>
+			</tr>
+				<tr>
+				<td>Brice Leverdez</td>
+				<td>34</td>
+				<td>France</td>
+				<td>35</td>
+				<td>1.78</td>
+			</tr>
+				<tr>
+				<td>Ng Ka Long Angus</td>
+				<td>26</td>
+				<td>Hong Kong</td>
+				<td>8</td>
+				<td>1.81</td>
+			</tr>
+				<tr>
+				<td>Lee Cheuk Yiu</td>
+				<td>24</td>
+				<td>Hong Kong</td>
+				<td>17</td>
+				<td>1.78</td>
+			</tr>
+				<tr>
+				<td>Wong Wing Ki Vincent</td>
+				<td>30</td>
+				<td>Hong Kong</td>
+				<td>43</td>
+				<td>1.82</td>
+			</tr>
+				<tr>
+				<td>Prannoy H S</td>
+				<td>28</td>
+				<td>India</td>
+				<td>31</td>
+				<td>1.78</td>
+			</tr>
+				<tr>
+				<td>Sai Praneeth</td>
+				<td>28</td>
+				<td>India</td>
+				<td>15</td>
+				<td>1.76</td>
+			</tr>
+				<tr>
+				<td>Subhankar Dey</td>
+				<td>27</td>
+				<td>India</td>
+				<td>48</td>
+				<td>1.75</td>
+			</tr>
+				<tr>
+				<td>Parupalli Kashyap</td>
+				<td>34</td>
+				<td>India</td>
+				<td>26</td>
+				<td>1.71</td>
+			</tr>
+				<tr>
+				<td>Sourabh Verma</td>
+				<td>28</td>
+				<td>India</td>
+				<td>32</td>
+				<td>1.78</td>
+			</tr>
+				<tr>
+				<td>Lakshya Sen</td>
+				<td>19</td>
+				<td>India</td>
+				<td>28</td>
+				<td>1.79</td>
+			</tr>
+				<tr>
+				<td>Kidambi Srikanth</td>
+				<td>27</td>
+				<td>India</td>
+				<td>13</td>
+				<td>1.78</td>
+			</tr>
+				<tr>
+				<td>Sameer Verma</td>
+				<td>26</td>
+				<td>India</td>
+				<td>27</td>
+				<td>1.7</td>
+			</tr>
+				<tr>
+				<td>Jonathan Christie</td>
+				<td>23</td>
+				<td>Indonesia</td>
+				<td>7</td>
+				<td>1.79</td>
+			</tr>
+				<tr>
+				<td>Tommy Sugiarto</td>
+				<td>32</td>
+				<td>Indonesia</td>
+				<td>30</td>
+				<td>1.75</td>
+			</tr>
+				<tr>
+				<td>Anthony Sinisuka Ginting</td>
+				<td>24</td>
+				<td>Indonesia</td>
+				<td>5</td>
+				<td>1.71</td>
+			</tr>
+				<tr>
+				<td>Shesar Hiren Rhustavito</td>
+				<td>26</td>
+				<td>Indonesia</td>
+				<td>19</td>
+				<td>1.7</td>
+			</tr>
+				<tr>
+				<td>Misha Zilberman</td>
+				<td>32</td>
+				<td>Israel</td>
+				<td>51</td>
+				<td>1.71</td>
+			</tr>
+				<tr>
+				<td>Kenta Nishimoto</td>
+				<td>26</td>
+				<td>Japan</td>
+				<td>16</td>
+				<td>1.8</td>
+			</tr>
+				<tr>
+				<td>Kento Momota</td>
+				<td>26</td>
+				<td>Japan</td>
+				<td>1</td>
+				<td>1.75</td>
+			</tr>
+				<tr>
+				<td>Kodai Naraoka</td>
+				<td>19</td>
+				<td>Japan</td>
+				<td>45</td>
+				<td>1.73</td>
+			</tr>
+				<tr>
+				<td>Kanta Tsuneyama</td>
+				<td>24</td>
+				<td>Japan</td>
+				<td>14</td>
+				<td>1.73</td>
+			</tr>
+				<tr>
+				<td>Koki Watanabe</td>
+				<td>22</td>
+				<td>Japan</td>
+				<td>41</td>
+				<td>1.66</td>
+			</tr>
+				<tr>
+				<td>Heo Kwang Hee</td>
+				<td>25</td>
+				<td>Korea</td>
+				<td>37</td>
+				<td>1.8</td>
+			</tr>
+				<tr>
+				<td>Lee Zii Jia</td>
+				<td>22</td>
+				<td>Malaysia</td>
+				<td>10</td>
+				<td>1.86</td>
+			</tr>
+				<tr>
+				<td>Liew Daren</td>
+				<td>33</td>
+				<td>Malaysia</td>
+				<td>33</td>
+				<td>1.78</td>
+			</tr>
+				<tr>
+				<td>Mark Caljouw</td>
+				<td>26</td>
+				<td>Netherlands</td>
+				<td>36</td>
+				<td>1.84</td>
+			</tr>
+				<tr>
+				<td>Loh Kean Yew</td>
+				<td>23</td>
+				<td>Singapore</td>
+				<td>39</td>
+				<td>1.75</td>
+			</tr>
+				<tr>
+				<td>Tanongsak Saensomboonsuk</td>
+				<td>30</td>
+				<td>Thailand</td>
+				<td>40</td>
+				<td>1.79</td>
+			</tr>
+				<tr>
+				<td>Suppanyu Avihingsanon</td>
+				<td>31</td>
+				<td>Thailand</td>
+				<td>46</td>
+				<td>1.81</td>
+			</tr>
+				<tr>
+				<td>Kantaphon Wangcharoen</td>
+				<td>22</td>
+				<td>Thailand</td>
+				<td>18</td>
+				<td>1.73</td>
+			</tr>
+				<tr>
+				<td>Sitthikom Thammasin</td>
+				<td>25</td>
+				<td>Thailand</td>
+				<td>29</td>
+				<td>1.85</td>
+			</tr>
+				<tr>
+				<td>Khosit Phetpradab</td>
+				<td>26</td>
+				<td>Thailand</td>
+				<td>34</td>
+				<td>1.68</td>
+			</tr>
+				<tr>
+				<td>Kunlavut Vitidsarn</td>
+				<td>19</td>
+				<td>Thailand</td>
+				<td>22</td>
+				<td>1.73</td>
+			</tr>
+		</table>
+	<br><br>
+	<!-- Creating the table for Women's Singles player info -->
+	<h2> Women's Singles Player Information </h2>
+	<table id="womeninfo">
+		<t>
+			<th> Name </th>
+			<th> Age </th>
+			<th> Country </th>
+			<th> Ranking </th>
+			<th> Height (metres) </th>
+		</t>
+	<!-- Getting our data -->
+				<tr>
+				<td>Lianne Tan</td>
+				<td>30</td>
+				<td>Belgium</td>
+				<td>40</td>
+				<td>1.63</td>
+			</tr>
+				<tr>
+				<td>Michelle Li</td>
+				<td>29</td>
+				<td>Canada</td>
+				<td>10</td>
+				<td>1.73</td>
+			</tr>
+				<tr>
+				<td>Brittney Tam</td>
+				<td>23</td>
+				<td>Canada</td>
+				<td>48</td>
+				<td>1.67</td>
+			</tr>
+				<tr>
+				<td>He Bing Jiao</td>
+				<td>23</td>
+				<td>China</td>
+				<td>9</td>
+				<td>1.69</td>
+			</tr>
+				<tr>
+				<td>Han Yue</td>
+				<td>21</td>
+				<td>China</td>
+				<td>24</td>
+				<td>1.68</td>
+			</tr>
+				<tr>
+				<td>Cai Yan Yan</td>
+				<td>21</td>
+				<td>China</td>
+				<td>26</td>
+				<td>1.71</td>
+			</tr>
+				<tr>
+				<td>Chen Yu Fei</td>
+				<td>22</td>
+				<td>China</td>
+				<td>2</td>
+				<td>1.71</td>
+			</tr>
+				<tr>
+				<td>Chen Xiao Xin</td>
+				<td>22</td>
+				<td>China</td>
+				<td>33</td>
+				<td>1.7</td>
+			</tr>
+				<tr>
+				<td>Wang Zhi Yi</td>
+				<td>20</td>
+				<td>China</td>
+				<td>17</td>
+				<td>1.71</td>
+			</tr>
+				<tr>
+				<td>Zhang Yi Man</td>
+				<td>24</td>
+				<td>China</td>
+				<td>42</td>
+				<td>1.68</td>
+			</tr>
+				<tr>
+				<td>Tai Tzu Ying</td>
+				<td>26</td>
+				<td>Chinese Taipei</td>
+				<td>1</td>
+				<td>1.63</td>
+			</tr>
+				<tr>
+				<td>Pai Yu Po</td>
+				<td>29</td>
+				<td>Chinese Taipei</td>
+				<td>41</td>
+				<td>1.73</td>
+			</tr>
+				<tr>
+				<td>Line Hojmark Kjaersfeldt</td>
+				<td>26</td>
+				<td>Denmark</td>
+				<td>34</td>
+				<td>1.74</td>
+			</tr>
+				<tr>
+				<td>Mia Blichfeldt</td>
+				<td>23</td>
+				<td>Denmark</td>
+				<td>12</td>
+				<td>1.72</td>
+			</tr>
+				<tr>
+				<td>Julie Dawall Jakobsen</td>
+				<td>22</td>
+				<td>Denmark</td>
+				<td>43</td>
+				<td>1.71</td>
+			</tr>
+				<tr>
+				<td>Qi Xuefei</td>
+				<td>29</td>
+				<td>France</td>
+				<td>38</td>
+				<td>1.68</td>
+			</tr>
+				<tr>
+				<td>Yvonne Li</td>
+				<td>22</td>
+				<td>Germany</td>
+				<td>25</td>
+				<td>1.71</td>
+			</tr>
+				<tr>
+				<td>Cheung Ngan Yi</td>
+				<td>27</td>
+				<td>Hong Kong</td>
+				<td>31</td>
+				<td>1.68</td>
+			</tr>
+				<tr>
+				<td>Saina Nehwal</td>
+				<td>30</td>
+				<td>India</td>
+				<td>19</td>
+				<td>1.65</td>
+			</tr>
+				<tr>
+				<td>Pursala V Sindhu</td>
+				<td>25</td>
+				<td>India</td>
+				<td>7</td>
+				<td>1.79</td>
+			</tr>
+				<tr>
+				<td>Fitriani Fitriani</td>
+				<td>22</td>
+				<td>Indonesia</td>
+				<td>36</td>
+				<td>1.54</td>
+			</tr>
+				<tr>
+				<td>Ruselli Hartawan</td>
+				<td>23</td>
+				<td>Indonesia</td>
+				<td>39</td>
+				<td>1.6</td>
+			</tr>
+				<tr>
+				<td>Gregoria Mariska Tunjung</td>
+				<td>21</td>
+				<td>Indonesia</td>
+				<td>22</td>
+				<td>1.66</td>
+			</tr>
+				<tr>
+				<td>Akane Yamaguchi</td>
+				<td>23</td>
+				<td>Japan</td>
+				<td>5</td>
+				<td>1.56</td>
+			</tr>
+				<tr>
+				<td>Sayaka Takahashi</td>
+				<td>28</td>
+				<td>Japan</td>
+				<td>14</td>
+				<td>1.68</td>
+			</tr>
+				<tr>
+				<td>Saena Kawakami</td>
+				<td>23</td>
+				<td>Japan</td>
+				<td>50</td>
+				<td>1.6</td>
+			</tr>
+				<tr>
+				<td>Nozomi Okuhara</td>
+				<td>25</td>
+				<td>Japan</td>
+				<td>4</td>
+				<td>1.56</td>
+			</tr>
+				<tr>
+				<td>Aya Ohori</td>
+				<td>24</td>
+				<td>Japan</td>
+				<td>20</td>
+				<td>1.69</td>
+			</tr>
+				<tr>
+				<td>An Se Young</td>
+				<td>19</td>
+				<td>Korea</td>
+				<td>8</td>
+				<td>1.7</td>
+			</tr>
+				<tr>
+				<td>Sung Ji Hyun</td>
+				<td>29</td>
+				<td>Korea</td>
+				<td>15</td>
+				<td>1.75</td>
+			</tr>
+				<tr>
+				<td>Kim Ga Eun</td>
+				<td>22</td>
+				<td>Korea</td>
+				<td>18</td>
+				<td>1.72</td>
+			</tr>
+				<tr>
+				<td>Kim Hyo Min</td>
+				<td>25</td>
+				<td>Korea</td>
+				<td>46</td>
+				<td>1.74</td>
+			</tr>
+				<tr>
+				<td>Soniia Cheah</td>
+				<td>27</td>
+				<td>Malaysia</td>
+				<td>32</td>
+				<td>1.75</td>
+			</tr>
+				<tr>
+				<td>Evgeniya Kosetskaya</td>
+				<td>26</td>
+				<td>Russia</td>
+				<td>21</td>
+				<td>1.76</td>
+			</tr>
+				<tr>
+				<td>Kirsty Gilmour</td>
+				<td>27</td>
+				<td>Scotland</td>
+				<td>28</td>
+				<td>1.68</td>
+			</tr>
+				<tr>
+				<td>Yeo Jia Min</td>
+				<td>22</td>
+				<td>Singapore</td>
+				<td>27</td>
+				<td>1.63</td>
+			</tr>
+				<tr>
+				<td>Carolina Marin</td>
+				<td>27</td>
+				<td>Spain</td>
+				<td>3</td>
+				<td>1.72</td>
+			</tr>
+				<tr>
+				<td>Sabrina Jaquet</td>
+				<td>33</td>
+				<td>Switzerland</td>
+				<td>47</td>
+				<td>1.69</td>
+			</tr>
+				<tr>
+				<td>Supanida Katethong</td>
+				<td>23</td>
+				<td>Thailand</td>
+				<td>35</td>
+				<td>1.63</td>
+			</tr>
+				<tr>
+				<td>Pornpawee Chochuwong</td>
+				<td>23</td>
+				<td>Thailand</td>
+				<td>11</td>
+				<td>1.7</td>
+			</tr>
+				<tr>
+				<td>Phittayaporn Chaiwan</td>
+				<td>20</td>
+				<td>Thailand</td>
+				<td>29</td>
+				<td>1.64</td>
+			</tr>
+				<tr>
+				<td>Busanan Ongbamrungphan</td>
+				<td>24</td>
+				<td>Thailand</td>
+				<td>13</td>
+				<td>1.68</td>
+			</tr>
+				<tr>
+				<td>Porntip Buranaprasertsuk</td>
+				<td>29</td>
+				<td>Thailand</td>
+				<td>44</td>
+				<td>1.65</td>
+			</tr>
+				<tr>
+				<td>Ratchanok Intanon</td>
+				<td>26</td>
+				<td>Thailand</td>
+				<td>6</td>
+				<td>1.69</td>
+			</tr>
+				<tr>
+				<td>Nitchaon Jindapol</td>
+				<td>29</td>
+				<td>Thailand</td>
+				<td>23</td>
+				<td>1.63</td>
+			</tr>
+				<tr>
+				<td>Neslihan Yigit</td>
+				<td>27</td>
+				<td>Turkey</td>
+				<td>30</td>
+				<td>1.8</td>
+			</tr>
+				<tr>
+				<td>Iris Wang</td>
+				<td>26</td>
+				<td>USA</td>
+				<td>37</td>
+				<td>1.6</td>
+			</tr>
+				<tr>
+				<td>Beiwen Zhang</td>
+				<td>30</td>
+				<td>USA</td>
+				<td>16</td>
+				<td>1.69</td>
+			</tr>
+				<tr>
+				<td>Thuy Linh Nguyen</td>
+				<td>23</td>
+				<td>Vietnam</td>
+				<td>49</td>
+				<td>1.63</td>
+			</tr>
+				<tr>
+				<td>Thi Trang Vu</td>
+				<td>28</td>
+				<td>Vietnam</td>
+				<td>51</td>
+				<td>1.65</td>
+			</tr>
+		</table>
+	<br><br><br>
+	<p class="b0rder">The next two tables show the best performance of each of these athletes in each Super 750 and above tournament since the start of 2017. NA stands for Not Applicable, R64 for Round of 64, R32 for Round of 32, R16 for Round of 16, QF for Quarter Finals, SF for Semi-Finals, F for Final and W for Winner. If there are mutliples W it means they won that tournament that many times since 2017. I do not include the Thailand Open as it only became a Super 1000 tournament in 2020. The data is not fully updated due to the England Open only happening recently.</p> 
+	<br><br>
+	<!-- Creating the table for Men's placements at tournaments -->
+	<h2> Men's Best Placement at Tournaments </h2>
+	<table id="mentour">
+		<t>
+			<th> Name </th>
+			<th> All England Open </th>
+			<th> China Open </th>
+			<th> Indonesia Open </th>
+			<th> Denmark Open </th>
+			<th> Fuzhou China Open </th>
+			<th> Japan Open </th>
+			<th> French Open </th>
+			<th> Malaysia Open </th>
+			<th> World Tour Finals </th>
+			<th> World Championships </th>
+		</t>
+	<!-- Getting our data -->
+				<tr>
+				<td>Anders Antonsen</td>
+				<td>SF</td>
+				<td>SF</td>
+				<td>F</td>
+				<td>W</td>
+				<td>SF</td>
+				<td>QF</td>
+				<td>SF</td>
+				<td>R16</td>
+				<td>W</td>
+				<td>F</td>
+			</tr>
+				<tr>
+				<td>Anthony Sinisuka Ginting</td>
+				<td>R32</td>
+				<td>W</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>SF</td>
+				<td>R32</td>
+				<td>F</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Brian Yang</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Brice Leverdez</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td></td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Chen Long</td>
+				<td>QF</td>
+				<td>SF</td>
+				<td>QF</td>
+				<td>F</td>
+				<td>SF</td>
+				<td>QF</td>
+				<td>WW</td>
+				<td>F</td>
+				<td>SF</td>
+				<td>SF</td>
+			</tr>
+				<tr>
+				<td>Chou Tien Chen</td>
+				<td>F</td>
+				<td>SF</td>
+				<td>W</td>
+				<td>F</td>
+				<td>F</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>SF</td>
+				<td>QF</td>
+			</tr>
+				<tr>
+				<td>Hans-Kristian Solberg Vittinghus</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Heo Kwang Hee</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Huang Yu Xiang</td>
+				<td>SF</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Jason Anthony Ho-Shue</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R64</td>
+			</tr>
+				<tr>
+				<td>Jonathan Christie</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>F</td>
+				<td>F</td>
+				<td>SF</td>
+				<td>QF</td>
+				<td>QF</td>
+			</tr>
+				<tr>
+				<td>Kanta Tsuneyama</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>NA</td>
+				<td>QF</td>
+			</tr>
+				<tr>
+				<td>Kantaphon Wangcharoen</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>SF</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>SF</td>
+			</tr>
+				<tr>
+				<td>Kenta Nishimoto</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>SF</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>F</td>
+				<td>QF</td>
+				<td>NA</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Kento Momota</td>
+				<td>W</td>
+				<td>W</td>
+				<td>W</td>
+				<td>WW</td>
+				<td>WW</td>
+				<td>WW</td>
+				<td>SF</td>
+				<td>F</td>
+				<td>W</td>
+				<td>WW</td>
+			</tr>
+				<tr>
+				<td>Khosit Phetpradab</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>F</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Kidambi Srikanth</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>W</td>
+				<td>W</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>W</td>
+				<td>SF</td>
+				<td>QF</td>
+				<td>QF</td>
+			</tr>
+				<tr>
+				<td>Kodai Naraoka</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Koki Watanabe</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Kunlavut Vitidsarn</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Lakshya Sen</td>
+				<td>QF</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Lee Cheuk Yiu</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Lee Zii Jia</td>
+				<td>SF</td>
+				<td>R32</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>QF</td>
+				<td>QF</td>
+			</tr>
+				<tr>
+				<td>Liew Daren</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>SF</td>
+			</tr>
+				<tr>
+				<td>Loh Kean Yew</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Lu Guang Zu</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Mark Caljouw</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Misha Zilberman</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Ng Ka Long Angus</td>
+				<td>SF</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Parupalli Kashyap</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Prannoy H S</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>SF</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>SF</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Rasmus Gemke</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>F</td>
+				<td>SF</td>
+				<td>QF</td>
+				<td>SF</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Sai Praneeth</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>SF</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>SF</td>
+			</tr>
+				<tr>
+				<td>Sameer Verma</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>SF</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Shesar Hiren Rhustavito</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>QF</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Shi Yu Qi</td>
+				<td>W</td>
+				<td>SF</td>
+				<td>SF</td>
+				<td>R32</td>
+				<td>SF</td>
+				<td>SF</td>
+				<td>F</td>
+				<td>SF</td>
+				<td>W</td>
+				<td>F</td>
+			</tr>
+				<tr>
+				<td>Sitthikom Thammasin</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Sourabh Verma</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Subhankar Dey</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Sun Fei Xiang</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Suppanyu Avihingsanon</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>R64</td>
+			</tr>
+				<tr>
+				<td>Tanongsak Saensomboonsuk</td>
+				<td>QF</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Thomas Rouxel</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Toma Junior Popov</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Tommy Sugiarto</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>SF</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>SF</td>
+				<td>QF</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Viktor Axelsen</td>
+				<td>W</td>
+				<td>R16</td>
+				<td>F</td>
+				<td>SF</td>
+				<td>QF</td>
+				<td>W</td>
+				<td>SF</td>
+				<td>QF</td>
+				<td>W</td>
+				<td>W</td>
+			</tr>
+				<tr>
+				<td>Wang Tzu Wei</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>SF</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Wong Wing Ki Vincent</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>SF</td>
+				<td>SF</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>QF</td>
+			</tr>
+				<tr>
+				<td>Ygor Coelho</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Zhao Jun Peng</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+		</table>
+	<br><br>
+	<!-- Creating the table for women's placements at tournaments -->
+	<h2> Women's Best Placement at Tournaments </h2>
+	<table id="womentour">
+		<t>
+			<th> Name </th>
+			<th> All England Open </th>
+			<th> China Open </th>
+			<th> Indonesia Open </th>
+			<th> Denmark Open </th>
+			<th> Fuzhou China Open </th>
+			<th> Japan Open </th>
+			<th> French Open </th>
+			<th> Malaysia Open </th>
+			<th> World Tour Finals </th>
+			<th> World Championships </th>
+		</t>
+	<!-- Getting our data -->
+				<tr>
+				<td>Akane Yamaguchi</td>
+				<td>F</td>
+				<td>SF</td>
+				<td>W</td>
+				<td>F</td>
+				<td>W</td>
+				<td>W</td>
+				<td>W</td>
+				<td>F</td>
+				<td>W</td>
+				<td>SF</td>
+			</tr>
+				<tr>
+				<td>An Se Young</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>W</td>
+				<td>NA</td>
+				<td>SF</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Aya Ohori</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>SF</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Beiwen Zhang</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>SF</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Brittney Tam</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Busanan Ongbamrungphan</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Cai Yan Yan</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Carolina Marin</td>
+				<td>SF</td>
+				<td>WW</td>
+				<td>R32</td>
+				<td>F</td>
+				<td>SF</td>
+				<td>WW</td>
+				<td>F</td>
+				<td>QF</td>
+				<td>F</td>
+				<td>W</td>
+			</tr>
+				<tr>
+				<td>Chen Xiao Xin</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Chen Yu Fei</td>
+				<td>W</td>
+				<td>F</td>
+				<td>F</td>
+				<td>SF</td>
+				<td>WW</td>
+				<td>SF</td>
+				<td>SF</td>
+				<td>SF</td>
+				<td>W</td>
+				<td>SF</td>
+			</tr>
+				<tr>
+				<td>Cheung Ngan Yi</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Evgeniya Kosetskaya</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>QF</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Fitriani Fitriani</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Gregoria Mariska Tunjung</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>SF</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Han Yue</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>He Bing Jiao</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>SF</td>
+				<td>SF</td>
+				<td>SF</td>
+				<td>F</td>
+				<td>SF</td>
+				<td>F</td>
+				<td>QF</td>
+				<td>SF</td>
+			</tr>
+				<tr>
+				<td>Iris Wang</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R64</td>
+			</tr>
+				<tr>
+				<td>Julie Dawall Jakobsen</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>QF</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Kim Ga Eun</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Kim Hyo Min</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Kirsty Gilmour</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>QF</td>
+			</tr>
+				<tr>
+				<td>Lianne Tan</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>QF</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Line Hojmark Kjaersfeldt</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Mia Blichfeldt</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>QF</td>
+			</tr>
+				<tr>
+				<td>Michelle Li</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>SF</td>
+				<td>SF</td>
+				<td>SF</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Neslihan Yigit</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R64</td>
+			</tr>
+				<tr>
+				<td>Nitchaon Jindapol</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>SF</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Nozomi Okuhara</td>
+				<td>SF</td>
+				<td>SF</td>
+				<td>QF</td>
+				<td>W</td>
+				<td>F</td>
+				<td>F</td>
+				<td>R16</td>
+				<td>SF</td>
+				<td>F</td>
+				<td>W</td>
+			</tr>
+				<tr>
+				<td>Pai Yu Po</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Phittayaporn Chaiwan</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Pornpawee Chochuwong</td>
+				<td>F</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>SF</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Porntip Buranaprasertsuk</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Pursala V Sindhu</td>
+				<td>SF</td>
+				<td>QF</td>
+				<td>F</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>SF</td>
+				<td>SF</td>
+				<td>W</td>
+				<td>W</td>
+			</tr>
+				<tr>
+				<td>Qi Xuefei</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Ratchanok Intanon</td>
+				<td>W</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>W</td>
+				<td>SF</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>SF</td>
+				<td>SF</td>
+				<td>SF</td>
+			</tr>
+				<tr>
+				<td>Ruselli Hartawan</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Sabrina Jaquet</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Saena Kawakami</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Saina Nehwal</td>
+				<td>QF</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>F</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>SF</td>
+			</tr>
+				<tr>
+				<td>Sayaka Takahashi</td>
+				<td>R16</td>
+				<td>SF</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Soniia Cheah</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R32</td>
+			</tr>
+				<tr>
+				<td>Sung Ji Hyun</td>
+				<td>SF</td>
+				<td>R16</td>
+				<td>F</td>
+				<td>QF</td>
+				<td>R16</td>
+				<td>R16</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>QF</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Supanida Katethong</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Tai Tzu Ying</td>
+				<td>WWW</td>
+				<td>F</td>
+				<td>W</td>
+				<td>WW</td>
+				<td>SF</td>
+				<td>QF</td>
+				<td>W</td>
+				<td>WW</td>
+				<td>W</td>
+				<td>QF</td>
+			</tr>
+				<tr>
+				<td>Thi Trang Vu</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Thuy Linh Nguyen</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R16</td>
+			</tr>
+				<tr>
+				<td>Wang Zhi Yi</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+				<tr>
+				<td>Yeo Jia Min</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R32</td>
+				<td>R16</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>QF</td>
+			</tr>
+				<tr>
+				<td>Yvonne Li</td>
+				<td>R16</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>SF</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R64</td>
+			</tr>
+				<tr>
+				<td>Zhang Yi Man</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>R32</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+				<td>NA</td>
+			</tr>
+		</table>
+	<br><br><br>
+	<h2><u>My Predictions</u><h2>
+	<h2>Men's Singles: Kento Momota</h2>
+	<!-- Getting the image for Kento Momota -->
+	<img src="https://img.olympicchannel.com/images/image/private/t_16-9_1280/f_auto/v1598530559/primary/ffppgbmyufg5yrqtxhoi" alt="Kento Momota" width="350" height="300" class="center" >
+	<br>
+	<p class="b0rder">Kento Momota has been the most dominant player since the last Olympics. In 2019 he won 11 titles in the season, the most ever in mens singles. With the Olympics being in Japan I believe that also gives him an advantage. He has won the Japan Open twice since 2016 so he doesn't fall under the pressure of the home fans. I don't see anyone beating him here.</p>
+	<br>
+	<h2>Women's Singles: Carolina Marin</h2>
+	<!-- Getting the image for Carolina Marin -->
+	<img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202007/RTX2M2RP.png?PwXqGZhN75vVAfBUuLKVnlTZMPI81v51&size=770:433" alt="Carolina Marin" width="350" height="300" class="center" >
+	<br>
+	<p class="b0rder">Most people probably would have expected me to go with Tai Tzu Ying as she has been the best player since the last Olympics and as it is her last tournament before retirement she will give it absolutely everything. However, I cannot ignore the fact she has always underperformed at the Japan Open and the World Championships, the biggest tournament of each year. So, instead I am going with the reigning winner Carolina Marin. She is familiar with winning in Japan and she knows what it takes to win an Olympics. Her only problem will be staying fit as she has been injured quite a bit recently.</p>
+</body>
+</html>
+		
+		
